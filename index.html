@@ -7,7 +7,7 @@
 		<meta name="screen-orientation" content="portrait">
 		<!-- QQ强制竖屏 -->
 		<meta name="x5-orientation" content="portrait">
-        <title>白鹿堡</title>
+        <title>微商城方案</title>
         <link rel="stylesheet" href="assets/agile/css/agile.layout.css">
         <link rel="stylesheet" href="assets/third/seedsui/plugin/seedsui/seedsui.min.css">
         <link rel="stylesheet" href="assets/app/css/app.css">
@@ -15,7 +15,7 @@
     <body>
 	    <div id="section_container">
 		    <section id="slider_section" data-role="section" class="active">
-			    <article  data-role="article" id="slider_article" class="active" style="top:0;bottom:54px;background:#ebeff0;">
+			    <article  data-role="article" id="slider_article" class="active" style="position:relative;top:0;bottom:54px;background:#ebeff0;max-width:640px;margin:0 auto;">
 				    <div class="topbanner">
 					    <img src="update/topbanner.png" alt="">
 				    </div>
@@ -239,6 +239,21 @@
                         </li>
                     </ul>
                 </footer>
+
+                <!-- 悬浮按钮 -->
+                <div class="menumask"></div>
+                <div class="menubtn"><i class="icon-menubtn"></i></div>
+                <div class="menubox">
+                	<div class="menuinner">
+	                	<a href="javascript:void(0)" class="home" title="首页"></a>
+                		<a href="javascript:void(0)" class="contact" title="联系店家"></a>
+                		<a href="javascript:void(0)" class="car" title="购物车"></a>
+                		<a href="javascript:void(0)" class="menber" title="会员中心"></a>
+                		<a href="javascript:void(0)" class="share" title="分享"></a>
+                		<a href="javascript:void(0)" class="search" title="搜索"></a>
+                		<a href="javascript:void(0)" class="follow" title="关注"></a>
+                	</div>
+                </div>
 		    </section>
 	    </div>
 
