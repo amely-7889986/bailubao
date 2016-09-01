@@ -95,6 +95,47 @@ header .titlebar a,header .titlebar h1{
 .topbanner img{
     width: 100%;
 }
+.country{
+    display: block;
+    background: #fff;
+    overflow: hidden;
+}
+.country li{
+    width: 30.77%;
+    float: left;
+    margin: 0 4px;
+    text-align: center;
+    padding-top: 4px;
+}
+.country li .pic{
+    background: #ebeff0;
+}
+.country li>.pic img{
+    width: 94%;
+}
+.country li>.pic p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.country li>.txt{
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+}
+.advert{
+    display: block;
+    background: #fff;
+    overflow: hidden;
+    padding: 0 8px;
+}
+.advert>.pic{
+    width: 100%;
+    height: auto;
+    margin: 4px auto
+}
+.advert>.pic img{
+    width: 100%;
+}
 
 /*产品列表*/
 #new-box{
