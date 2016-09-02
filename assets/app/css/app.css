@@ -137,6 +137,34 @@ header .titlebar a,header .titlebar h1{
 }
 
 /*产品列表*/
+.protab{
+    background: #ebeff0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+}
+.protab .tab{
+    float: left;
+    width: 22%;
+}
+.btn-search{
+    width: 12%;
+    background: #F6BB42;
+    color: #fff;
+    float: left;
+    text-align: center;
+}
+.tab-tit>span{
+    display: inline-block;
+}
+.arrow-up{
+    width: 10px;
+    height: 18px;
+}
+.arrow-down{
+    width: 10px;
+    height: 18px;
+}
 .prolist{
     display: block;
     padding: 8px 4px;
