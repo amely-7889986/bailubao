@@ -480,6 +480,84 @@ header .titlebar a,header .titlebar h1{
 }
 
 
+/*购物车*/
+.shoppingStepBar{
+    margin: 16px 20% 0;
+    font-family: 'iconfont' !important;
+}
+.goods-box-shopcart .price{
+    margin-top: -8px;
+}
+.goods-box-shopcart .specification span{
+    margin-right: 2px;
+}
+.shoppingStepBar .step{
+    float: left;
+    width: 33.33333333333%;
+}
+.shoppingStepBar .step i{
+    position: relative;
+    top:-10px;
+    border-bottom: 2px solid #ccc;
+    display: block;
+}
+.shoppingStepBar .step .glyphicon{
+    color: #fff;
+    padding: 2px;
+    border-radius: 15px;
+    background-color: #CCD1D9;
+    font-size: 14px;
+    z-index: 100;
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.glyphicon-ok:before{
+    content: "\ea08";
+}
+.shoppingStepBar .active{
+    border-color: #ED5565;
+}
+.shoppingStepBar .active .glyphicon{
+    background-color: #ff6866;
+}
+.shoping-title{
+    font-size: 10px;
+}
+.shoppingStepBar .step em{
+    font-style: normal;
+    display: block;
+    font-size: 10px;
+}
+.shoppingStepBar .step:first-child i{
+    margin-right: -50%;
+}
+.shoppingStepBar .step:last-child i{
+    margin-left: -50%;
+}
+.emptycar{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+.emptycar img{
+    width: 40%;
+}
+.emptycar .text{
+    margin: 18px;
+}
+.emptycar .btn-shopmore{
+    padding: 4px 18px;
+    border: 1px solid #ddd;
+}
+
+
 /*背景颜色定义*/
 .bg-hui {
     background:#F4F4F4;
