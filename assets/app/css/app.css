@@ -211,12 +211,34 @@ header .titlebar a,header .titlebar h1{
     font-size: 12px;
     font-weight: normal;
 }
+.pagenum{
+    display: block;
+    width: 92%;
+    height: 28px;
+    margin: 8px 4%;
+}
+.pagenum a{
+    display: inline-block;
+    height: 28px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 0 12px;
+}
+.pagenum a.nor{
+    border: 1px solid #e6e9ed;
+    background: #fff;
+    color: #e6e9ed;
+}
+.pagenum a.active{
+    background: #8cc152;
+    color: #fff;
+}
 
 /*悬浮按钮*/
 .icon-menu {
     font-family: "dis-font";
     font-style: normal;
-
 }
 .icon-menu:before {
     /*content: "\002F";*/
@@ -556,7 +578,99 @@ header .titlebar a,header .titlebar h1{
     padding: 4px 18px;
     border: 1px solid #ddd;
 }
+.carlist{
+    display: block;
+}
+.carlist .li{
+    display: block;
+    background: #fff;
+    padding: 8px 1%;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+.carlist .pic{
+    width: 28%;
+    float: left;
+}
+.carlist .pic>img{
+    width: 100%;
+}
+.carlist .info{
+    width: 72%;
+    float: left;
+}
+.carlist .info>a.tit{
+    font-size: 14px;
+    margin-top: 8px;
+    width: 90%;
+}
+.carlist .info>.prize{
+    color: #ed5565;
+    font-size: 12px;
+}
+.carlist .info>.goodsnum{
+    float: right;
+    display: block;
+    overflow: hidden;
+}
+.carlist .info>.goodsnum>a{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ddd;
+    text-align: center;
+    float: left;
+    background: #efefef;
+    color: #ccc;
+}
+.carlist .info>.goodsnum>input{
+    height: 24px;
+    width: 36px;
+    float: left;
+    padding: 0 4px;
+    margin: 0 -1px;
+}
+.carlist .li>a.cancel{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #ed5565;
+}
+.countall{
+    margin: 18px 8px;
+    font-size: 14px;
+}
+a.submit{
+    background: #e0001b;
+    color: #fff;
+}
+.font20{
+    font-size: 20px;
+    font-weight: 500
+}
 
+/*订单流程*/
+.confirmbtn{
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    -webkit-box-shadow: 0 -1px 8px rgba(0, 0, 0, .1);
+    box-shadow: 0 -1px 8px rgba(0, 0, 0, .1);
+}
+.confirmbtn .prize{
+    display: inline-block;
+    width: 74%;
+    text-align: center;
+}
+.confirmbtn>a.submit{
+    display: inline-block;
+    width: 26%;
+    text-align: center;
+}
 
 /*背景颜色定义*/
 .bg-hui {
