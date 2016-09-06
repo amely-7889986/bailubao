@@ -671,6 +671,59 @@ a.submit{
     width: 26%;
     text-align: center;
 }
+.confirm-input{
+    background: #fff;
+}
+.outer{
+    border:1px solid #ccc;
+    border-radius: 6px;
+    margin:10px;
+}
+.accordionbar{
+    display: block;
+    padding:10px;
+    border-bottom:1px solid #ccc;
+    background-color: #efefef;
+    color: #444;
+}
+.accordionbar.active{
+    color:#aaa;
+}
+[data-role="accordion"]{
+    overflow: hidden;
+    height: 0px;
+    /*可以适当加一些动画*/
+    z-index: 10;
+    -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}/* 必须为被控制的组件添加默认样式不显示*/
+[data-role="accordion"].active{
+    border-bottom:1px solid #ccc;
+    height:auto;
+    /*可以适当加一些动画*/
+    -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}/* 必须为被控制的组件添加active样式，显示组件*/
+
+[data-role="accordion"] li, [data-role="accordionone"] li{
+    line-height:40px;
+    padding:0px 4px;
+    border-bottom:1px solid #ccc;
+}
+[data-role="accordionone"]{ 
+    display: none;
+}/* 必须为被控制的组件添加默认样式不显示*/
+[data-role="accordionone"].active{
+    display: block;
+}/* 必须为被控制的组件添加active样式，显示组件*/
+
 
 /*背景颜色定义*/
 .bg-hui {

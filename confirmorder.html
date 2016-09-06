@@ -16,25 +16,32 @@
         <div id="section_container">
             <section id="slider_section" data-role="section" class="active">
                 <article  data-role="article" id="slider_article" class="active" style="position:relative;top:0;bottom:54px;background:#f6f6f6;max-width:640px;margin:0 auto;">
-                    <div class="shoppingStepBar clearfix">
-                        <div class="step active text-left">
-                            <em style="margin-left: -8px;">购物车</em>
-                            <div class="glyphicon glyphicon-ok"></div>
-                            <i style="border-bottom:2px solid #ff6866;"></i>
+                    <div class="scroller">
+                        <div class="shoppingStepBar clearfix">
+                            <div class="step active text-left">
+                                <em style="margin-left: -8px;">购物车</em>
+                                <div class="glyphicon glyphicon-ok"></div>
+                                <i style="border-bottom:2px solid #ff6866;"></i>
+                            </div>
+                            <div class="step active text-center">
+                                <em>确认订单</em>
+                                <div class="glyphicon glyphicon-ok"></div>
+                            </div>
+                            <div class="step text-right">
+                                <em style="margin-right: -14px;">下单成功</em>
+                                <div class="glyphicon glyphicon-ok"></div>
+                                <i></i>
+                            </div>
                         </div>
-                        <div class="step active text-center">
-                            <em>确认订单</em>
-                            <div class="glyphicon glyphicon-ok"></div>
+                        <hr class="tbmargin8">
+                        <div class="confirm-input">
+                            <div class="outer">
+                                <a class="accordionbar" data-role="accordionbar" data-toggle="accordion" href="#accordion2">填写地址</a>
+                                <ul data-role="accordion" id="accordion2" class="listitem">
+                                    <li><div class="text" href="addinput" data-toggle="html">新增地址</div></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="step text-right">
-                            <em style="margin-right: -14px;">下单成功</em>
-                            <div class="glyphicon glyphicon-ok"></div>
-                            <i></i>
-                        </div>
-                    </div>
-                    <hr class="tbmargin8">
-                    <div class="confirm-input">
-                        
                     </div>
                 </article>
                 <footer>
@@ -54,6 +61,30 @@
         <!---  agile -->
         <script type="text/javascript" src="assets/agile/js/agile.js"></script>
         <!-- app -->
+        <script>
+        (function(){
+            //[必须]添加accordion控制器
+            A.Controller.add({
+                accordion : {
+                    selector : '[data-toggle="accordion"]',
+                    isToggle : true //仅控制目标显隐
+                },
+                accordionone : { 
+                    selector : '[data-toggle="accordionone"]',
+                }
+            });
+            //[可选]添加accordionbar组件，只有在组件有样式切换的时候需要添加，本例不添加
+            
+            A.Component.add({
+                accordionbar : {
+                    selector : '[data-role="accordionbar"]',
+                    isToggle : true
+                }
+            });
+            
+        })();
+        
+        </script>
         <script type="text/javascript" src="assets/app/js/app.seedsui.js"></script>
     </body>
 </html>
