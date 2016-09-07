@@ -13,7 +13,7 @@ header .titlebar{
     border-bottom: 1px solid #ddd;
 }
 header .titlebar a,header .titlebar h1{
-    color: #02cfff;
+    color: #000;
 }
 .slidebar{
     width: 100%;
@@ -643,7 +643,7 @@ header .titlebar a,header .titlebar h1{
     font-size: 14px;
 }
 a.submit{
-    background: #e0001b;
+    background: #e0001b !important;
     color: #fff;
 }
 .font20{
@@ -670,30 +670,41 @@ a.submit{
     display: inline-block;
     width: 26%;
     text-align: center;
+    background: #e0001b;
 }
 .confirm-input{
     background: #fff;
+    overflow: hidden;
+    margin-bottom: 64px;
 }
 .outer{
-    border:1px solid #ccc;
     border-radius: 6px;
-    margin:10px;
+    margin: 94%;
+    margin: 10px 3%;
 }
 .accordionbar{
     display: block;
     padding:10px;
-    border-bottom:1px solid #ccc;
-    background-color: #efefef;
+    border:1px solid #ccc;
+    border-radius: 6px;
     color: #444;
 }
 .accordionbar.active{
     color:#aaa;
 }
+.listitem{
+    width: 94%;
+    background: #333;
+    margin-top: 4px;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+}
 [data-role="accordion"]{
     overflow: hidden;
     height: 0px;
     /*可以适当加一些动画*/
-    z-index: 10;
+    z-index: 999;
     -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
     -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
     -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
@@ -701,15 +712,14 @@ a.submit{
     transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
 }/* 必须为被控制的组件添加默认样式不显示*/
 [data-role="accordion"].active{
-    border-bottom:1px solid #ccc;
     height:auto;
+    position: absolute;
     /*可以适当加一些动画*/
     -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
     -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
     -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
     -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
     transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-    box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
 }/* 必须为被控制的组件添加active样式，显示组件*/
 
 [data-role="accordion"] li, [data-role="accordionone"] li{
@@ -723,6 +733,69 @@ a.submit{
 [data-role="accordionone"].active{
     display: block;
 }/* 必须为被控制的组件添加active样式，显示组件*/
+.cargood{
+    display: block;
+    margin: 10px 3%;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.cargood .title{
+    background: #ddd;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 8px;
+}
+.cargood .tit>a{
+    font-size: 12px;
+}
+.cargood .list{
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+.cargood .list>.pic{
+    width: 24%;
+    float: left;
+}
+.cargood .list>.pic img{
+    width: 100%;
+}
+.cargood .list>.info{
+    width: 74%;
+    float: left;
+    padding: 0 1%;
+}
+.cargood .list>.info a{
+    margin-top: 4px;
+}
+.cargood .list>.info .prize{
+    color: #e0001b;
+}
+.cargood .list>.info em{
+    font-style: normal;
+}
+.remark{
+    width: 94%;
+    border-radius: 6px;
+}
+.outer .pocket{
+    height: 34px;
+    line-height: 34px;
+}
+.discount{
+    display: block;
+    margin: 10px 3%;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    overflow: hidden;
+}
+.discount>.li{
+    display: block;
+    text-align: right;
+    padding: 0 4px;
+    height: 24px;
+    line-height: 24px;
+}
 
 
 /*背景颜色定义*/
@@ -1244,7 +1317,7 @@ footer>.titlebar{
     color: #1882d8 !important;
 }
 .col-red{
-    color: #f00;
+    color: #e0001b;
 }
 .pos-r{
     position: relative;
