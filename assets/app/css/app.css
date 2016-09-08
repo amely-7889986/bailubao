@@ -15,6 +15,9 @@ header .titlebar{
 header .titlebar a,header .titlebar h1{
     color: #000;
 }
+a.collect>i{
+    color: #e0001b;
+}
 .slidebar{
     width: 100%;
 }
@@ -233,6 +236,96 @@ header .titlebar a,header .titlebar h1{
 .pagenum a.active{
     background: #8cc152;
     color: #fff;
+}
+
+/*产品详情*/
+.proban{
+    width: 100%;
+    background: #fff;
+}
+.proban>img{
+    width: 100%;
+}
+.proinfo{
+    padding: 8px;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.proinfo .prize{
+    display: block;
+    overflow: hidden;
+    margin: 8px 0;
+}
+.proinfo>h2{
+    font-size: 16px;
+}
+.buycount{
+    display: block;
+    overflow: hidden;
+}
+.shopbtn{
+    display: block;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+.shopbtn .btn{
+    display: block;
+    width: 20%;
+    height: 46px;
+    text-align: center;
+    padding-top: 8px;
+    background: #fff;
+}
+.shopbtn .btn span{
+    display: block;
+}
+.shopbtn .add{
+    width: 30%;
+    background: #fe9303;
+    display: block;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    color: #fff;
+}
+.shopbtn .buy{
+    width: 30%;
+    background: #fe5000;
+    display: block;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    color: #fff;
+}
+.prodetail{
+    display: block;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.prodetail .tab{
+    display: block;
+    height: 44px;
+    width: 100%;
+    line-height: 44px;
+    font-size: 12px;
+    background: #eee;
+}
+.prodetail .tab>a{
+    width: 33.33%;
+    float: left;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.prodetail .tab>a.active,.prodetail .tab>a:active{
+    background: #fff;
+    color: #ff5000;
+}
+.prodetail .info{
+    display: block;
+}
+.prodetail .info>img{
+    width: 100%;
 }
 
 /*悬浮按钮*/
@@ -609,12 +702,11 @@ header .titlebar a,header .titlebar h1{
     color: #ed5565;
     font-size: 12px;
 }
-.carlist .info>.goodsnum{
-    float: right;
+.goodsnum{
     display: block;
     overflow: hidden;
 }
-.carlist .info>.goodsnum>a{
+.goodsnum>a{
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -625,12 +717,15 @@ header .titlebar a,header .titlebar h1{
     background: #efefef;
     color: #ccc;
 }
-.carlist .info>.goodsnum>input{
+.goodsnum>input{
     height: 24px;
     width: 36px;
     float: left;
     padding: 0 4px;
     margin: 0 -1px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
 }
 .carlist .li>a.cancel{
     position: absolute;
@@ -1311,7 +1406,7 @@ footer>.titlebar{
     color: #02cfff !important;
 }
 .col-orange{
-    color: #faa82d !important;
+    color: #ff5000 !important;
 }
 .col-dlan{
     color: #1882d8 !important;
@@ -1324,6 +1419,21 @@ footer>.titlebar{
 }
 .col-hui{
     color: #cacaca;
+}
+.col-dhui{
+    color: #999;
+}
+.font10{
+    font-size: 10px;
+}
+.font12{
+    font-size: 12px;
+}
+.font14{
+    font-size: 14px;
+}
+.font24{
+    font-size: 24px;
 }
 .list.noclick{
     background: #fff;
