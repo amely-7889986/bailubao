@@ -317,7 +317,7 @@ a.collect>i{
     border: 1px solid #ddd;
     box-sizing: border-box;
 }
-.prodetail .tab>a.active,.prodetail .tab>a:active{
+.prodetail .tab>a.active,.prodetail .tab>a:active,.prodetail .tab>a:hover{
     background: #fff;
     color: #ff5000;
 }
@@ -327,6 +327,48 @@ a.collect>i{
 .prodetail .info>img{
     width: 100%;
 }
+.goodsec{
+    display: block;
+    background: #fff;
+    overflow: hidden;
+    padding: 8px;
+}
+.goodsec .pic{
+    width: 24%;
+}
+.goodsec .pic>img{
+    width: 100%;
+}
+.goodsec .info{
+    width: 74%;
+    margin-left: 2%;
+}
+.comlist{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 18px;
+    -webkit-box-shadow:  0 1px 2px rgba(0,0,0,.2);
+    box-shadow:  0 1px 2px rgba(0,0,0,.2);
+}
+.comlist .tit{
+    background: #ddd;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 8px;
+}
+.comlist .list{
+    padding: 0 8px;
+    border-bottom: 1px dashed #ccc;
+    background: #fff;
+}
+.comlist .list>p{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    height: 28px;
+    line-height: 28px;
+}
+
 
 /*悬浮按钮*/
 .icon-menu {
@@ -671,6 +713,13 @@ a.collect>i{
     padding: 4px 18px;
     border: 1px solid #ddd;
 }
+.btn-pay{
+    padding: 8px 18px;
+    border-radius: 4px;
+    background: #e0001b;
+    color: #fff;
+    font-size: 12px;
+}
 .carlist{
     display: block;
 }
@@ -774,7 +823,7 @@ a.submit{
 }
 .outer{
     border-radius: 6px;
-    margin: 94%;
+    width: 94%;
     margin: 10px 3%;
 }
 .accordionbar{
@@ -933,171 +982,6 @@ footer .menubar .icon-sales{
     background-size: 84%;
 }
 
-/*套餐页面*/
-.video-title{
-    border-top: #dddddd solid 1px;
-    border-bottom: #dddddd solid 1px;
-    background:#f2f2f2;
-    padding: 4px 6px;
-    margin-top: 4px;
-}
-.video-title  h3{
-    font-size: 16px;
-    color: #303030;
-    font-weight: 100;
-    padding-bottom: 4px;
-}
-.video-title p{
-    padding: 4px 0 0 0;
-
-}
-.video-title p span{
-    display: inline-block;
-    height: 18px;
-    line-height: 18px;
-    margin-right: 4px;
-}
-.video-title p span em{
-    display: inline-block;
-    height: 18px;
-    line-height: 18px;
-}
-.video-title p .eye{
-    width: 22px;
-    height: 18px;
-    display: inline-block;
-    background: url(../img/video/eye.png) no-repeat top center;
-    background-size: 100%;
-}
-.video-title p .zan{
-    width: 16px;
-    height: 18px;
-    display: inline-block;
-    background: url(../img/video/head01.png) no-repeat top center;
-    background-size: 100%;
-}
-.video-title p .zan.active{
-    background: url(../img/video/head02.png) no-repeat top center;
-    background-size: 100%;
-}
-.pack-list{
-    width: 98%;
-    padding: 0 1%;
-    background: #fff;
-}
-.pack-list li{
-    float: left;
-    width: 47%;
-    margin: 4px 1%;
-    border: 1px solid #ddd;
-}
-.pack-list li>.text{
-    background-color: #fff;
-    color: #000;
-    text-align: center;
-}
-.pack-list li>.text h3{
-    padding: 2px  4px;
-    font-size: 16px;
-    font-weight: 100;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-       text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.pack-list li>.text p{
-    font-size: 14px;
-    padding: 2px  4px;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-       text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.pack-list li>.text a.btn-buy{
-    display: inline-block;
-    font-size: 12px;
-    color: #fff;
-    background: #e51025;
-    padding: 2px 8px;
-    border-radius: 12px;
-    margin: 4px auto;
-}
-#packinfo {
-}
-.pack-detail{
-    display: block;
-    background: #fff;
-    padding: 4px;
-}
-.pack-detail .tit{
-    font-size: 14px;
-    line-height: 34px;
-    font-weight: normal;
-}
-.pack-detail .tit span{
-    display: inline-block;
-    float: right;
-}
-.pack-detail .odd{
-    font-size: 12px;
-    text-indent: 0;
-}
-.pack-detail>p{
-    font-size: 12px;
-    line-height: 20px;
-    text-indent: 24px;
-}
-.pack-detail>img{
-    width: 80%;
-    padding: 4px 10%;
-}
-
-/*活动详情页面*/
-.active-post{
-    display: block;
-    padding: 4px;
-    background: #fff;
-    overflow: hidden;
-    border-bottom: 1px solid #ddd;
-}
-.active-post .img{
-    display: block;
-    float: left;
-    width: 46%;
-    margin: 0 2%;
-}
-.active-post .img>img{
-    width: 100%;
-}
-.activeinfo{
-    display: block;
-    background: #fff;
-    padding: 4px;
-    border-bottom: 1px solid #ddd;
-}
-.activeinfo h1{
-    font-size: 14px;
-    line-height: 34px;
-}
-.activeinfo>p{
-    font-size: 12px;
-    text-indent: 24px;
-}
-.activeinfo .img{
-    width: 90%;
-    padding: 4px 5%;
-}
-.activeinfo .img>img{
-    width: 100%;
-}
-.photo{
-    border: 2px solid #faa82d;
-}
-#richeditor .sent{
-    background: #02cfff;
-    color: #fff;
-    border: none;
-}
 
 /*产品详情页面*/
 .menu-box{
@@ -1128,81 +1012,11 @@ footer .menubar .icon-sales{
     text-align: center;
     overflow: hidden;
 }
-.goodsec{
-    display: block;
-    padding: 4px;
-    overflow: hidden;
-    border-bottom: 1px solid #ddd;
-}
-.goodsec h1{
-    font-size: 14px;
-    line-height: 28px;
-    font-weight: normal;
-}
-.goodsec .prize span{
-    margin-right: 16px;
-}
-.goodsec .prize em{
-    font-style: normal;
-}
-.goodsec .info{
-    display: block;
-    padding-left: 4px;
-}
-.goodsec .info li{
-    display: block;
-    line-height: 24px;
-    font-size: 12px;
-    width: 50%;
-    float: left;
-}
-.goodbtn{
-    display: block;
-    overflow: hidden;
-    padding: 4px;
-    border-bottom: 1px solid #ddd;
-}
-.goodbtn .count{
-    line-height: 34px;
-}
-.goodbtn .count a{
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
-    text-align: center;
-    border: 1px solid #000;
-}
-.goodbtn .count input{
-    display: inline-block;
-    height: 18px;
-    line-height: 18px;
-    padding: 0 2px;
-    margin: 0 2px;
-    border-color: #000;
-    width: 48px;
-}
-.goodbtn .btn{
-    padding: 4px 12px;
-}
-.goodbtn .btn a{
-    display: inline-block;
-    float: left;
-    width: 46%;
-    margin: 0 2%;
-    border-radius: 4px;
-    color: #fff;
-    text-align: center;
-    line-height: 34px;
-}
 .bg-blue{
     background: #5cb1db;
 }
 .bg-yellow{
     background: #faa82d;
-}
-.goodinfo img{
-    width: 100%;
 }
 .table{
     display: block;
@@ -1300,35 +1114,105 @@ footer .menubar .icon-sales{
 }
 
 /*用户中心*/
-#user-header{
-    width: 100%;
-    height: 6.8em;
-    margin-bottom: 6px;
+.usercar{
+    display: block;
+    overflow: hidden;
+    background: #e0001b;
+    color: #ddd;
+    border-bottom: 2px solid #fff;
+    padding: 32px 8px 12px 8px;
+}
+.usercar .userpic{
+    width: 24%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    overflow: hidden;
+    float: left;
+}
+.usercar .userpic>.pic{
+    margin: 4px;
+    border-radius: 50%;
+    border: 1px solid #333;
     overflow: hidden;
 }
-#user-header .user-img{
-    display: block;
+.usercar .userpic>.pic img{
+    width: 100%;
+}
+.usercar .usersec{
+    width: 64%;
+    overflow: hidden;
     float: left;
-    margin: 12px 0 0 12px;
+    margin-left: 2%;
 }
-#user-header .user-img .photo{
-    width: 80px;
-    height: 80px;
-    border: #faa82d solid 2px;
+.usercar .user-name{
+    color: #fff;
 }
-#user-header .user-detail{
-    display: block;
+.usercar .user-cost{
+    font-size: 10px;
+    color: #fff;
+}
+.usercar .user-discount{
+    font-size: 10px;
+}
+.usercar .message{
+    width: 8%;
     float: left;
-    margin-top: 12px;
-    margin-left: 12px;
 }
-#user-header .user-detail h1{
-    color: #1882d8;
-    font-weight: normal;
+.usercar a.notice{
+    display: inline-block;
+    background: url(../img/user/iconfont-xinxi.png) left center no-repeat;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
 }
-#user-header .user-detail p{
-    padding-top: 6px;
-    color: #000;
+.usercar>p.nav{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.user-tab{
+    background: #232323;
+    padding: 8px 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.6);
+    box-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.user-tab li{
+    display: block;
+    width: 20%;
+    box-sizing: border-box;
+    border-right: 1px solid #333;
+    float: left;
+    color: #ddd;
+    font-size: 12px;
+    text-align: center;
+}
+.user-tab li>span{
+    display: block;
+    margin: 0 auto;
+    width: 28px;
+    height: 28px;
+}
+.user-tab .wpay{
+    background: url(../img/user/dingdan.png) center center no-repeat;
+    background-size: 100%;
+}
+.user-tab .wsent{
+    background: url(../img/user/iconfont-daifukuan.png) center center no-repeat;
+    background-size: 100%;
+}
+.user-tab .wreceipt{
+    background: url(../img/user/iconfont-daifahuo.png) center center no-repeat;
+    background-size: 100%;
+}
+.user-tab .wcomment{
+    background: url(../img/user/iconfont-wodedingdan13.png) center center no-repeat;
+    background-size: 100%;
+}
+.user-tab .return{
+    background: url(../img/user/iconfont-untitled5.png) center center no-repeat;
+    background-size: 100%;
 }
 .usertit{
     display: block;
@@ -1355,6 +1239,8 @@ footer .menubar .icon-sales{
     background-size: cover !important;
     background-position: center center;
     background-repeat: no-repeat;
+    line-height: 20px;
+    font-size: 18px;
 }
 
 /*注册登录*/
@@ -1402,14 +1288,14 @@ footer>.titlebar{
 .bg-bai{
     background: #fff;
 }
-.col-lan{
-    color: #02cfff !important;
+.col-yellow{
+    color: #ffd800 !important;
 }
 .col-orange{
     color: #ff5000 !important;
 }
-.col-dlan{
-    color: #1882d8 !important;
+.col-bai{
+    color: #fff !important;
 }
 .col-red{
     color: #e0001b;
