@@ -17,31 +17,17 @@
             <section id="slider_section" data-role="section" class="active">
                 <article  data-role="article" id="slider_article" class="active" style="position:relative;top:0;bottom:54px;background:#f6f6f6;max-width:640px;margin:0 auto;">
                     <div class="protab">
-                        <a href="javascript:void(0)" class="tab">
-                            <div class="tab-tit">
-                                价格
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="tab">
-                            <div class="tab-tit">
-                                上架
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="tab">
-                            <div class="tab-tit">
-                                浏览量
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="tab">
-                            <div class="tab-tit">
-                                销量
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="btn-search">
-                            <div class="tab-tit">
-                                <span class="icon-search"></span>
-                            </div>
-                        </a>
+                        <ul class="my_filter_controller">
+                            <li data-role="tab" data-toggle="view" href="#fujin" class="tab"><span>价格</span><i>|</i></li>
+                            <li data-role="tab" data-toggle="view" href="#meishi" class="tab"><span>上架</span><i>|</i></li>
+                            <li data-role="tab" data-toggle="view" href="#paixu" class="tab"><span>浏览量</span><i>|</i></li>
+                            <li data-role="tab" data-toggle="view" href="#shaixuan" class="tab"><span>销量</span></li>
+                            <a href="javascript:void(0)" class="btn-search">
+                                <div class="tab-tit">
+                                    <span class="icon-search"></span>
+                                </div>
+                            </a>
+                        </ul>
                     </div>
                     <div class="prolist">
                         <div class="col-2">
@@ -166,5 +152,30 @@
         <script type="text/javascript" src="assets/agile/js/agile.js"></script>
         <!-- app -->
         <script type="text/javascript" src="assets/app/js/app.seedsui.js"></script>
+        <script>
+        (function(){
+            $('.my_filter_conatiner .my_filter_component').on('touchmove', function(e){
+                if($(e.target).hasClass('my_filter_component')){
+                    e.preventDefault();
+                }
+            });
+            
+            var resetView = function(){
+                setTimeout(function(){
+                    $('.my_filter_controller li').removeClass('active');
+                }, 100);
+            };
+            
+            $('#controller_section').on('sectionhide', function(){
+                resetView();
+            });
+            
+            $('.my_filter_controller li').on(A.options.clickEvent, function(){
+                if($(this).hasClass('active')) resetView();
+            });
+            
+        })();
+        
+        </script>
     </body>
 </html>

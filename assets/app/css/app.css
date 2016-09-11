@@ -18,6 +18,9 @@ header .titlebar a,header .titlebar h1{
 a.collect>i{
     color: #e0001b;
 }
+em{
+    font-style: normal;
+}
 .slidebar{
     width: 100%;
 }
@@ -150,6 +153,9 @@ a.collect>i{
     float: left;
     width: 22%;
 }
+.protab .tab:active,.protab .tab.active{
+    color: #000;
+}
 .btn-search{
     width: 12%;
     background: #F6BB42;
@@ -237,6 +243,52 @@ a.collect>i{
     background: #8cc152;
     color: #fff;
 }
+.my_filter_controller{
+    z-index:2;
+    position:absolute;
+    top:0;
+    clear:both;
+    width: 100%;
+}
+.my_filter_controller li{
+    float:left;
+}
+.my_filter_controller li span:after{
+    font-family: iconfont;
+}
+.my_filter_controller li span:after{
+    content: '\e90e';
+}
+.my_filter_controller li.active span:after{
+    content: '\e91a';
+    -webkit-animation: spinner 0.1s 2 linear;
+    animation: spinner 0.1s 2 linear;
+}
+.my_filter_controller li i{
+    float:right;
+    color:#ECF0F1;
+    font-style:normal;
+}
+.my_filter_component.active {
+    z-index:1;
+    position:absolute;
+    display:block;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.2);
+}
+@-webkit-keyframes myFilterslideDownIn{
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-44px,0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0)
+    }
+}
+
+
 
 /*产品详情*/
 .proban{
@@ -987,24 +1039,25 @@ footer .menubar .icon-sales{
 .menu-box{
     width: 100%;
     background-color: #fff;
+    overflow: hidden;
 }
 .menu-box li{
     float: left;
     width: 25%;
-    height: 44px;
+    height: 40px;
 }
 .menu-box li span{
     width: 100%;
-    height: 43px;
-    line-height: 43px;
+    height: 38px;
+    line-height: 38px;
     text-align: center;
     display: inline-block;
-    color: #666666;
-    border-bottom: #ddd solid 1px;
+    color: #000;
+    font-size: 12px;
 }
 .menu-box li.active span{
-    color: #4ea9de;
-    border-bottom: #4ea9de solid 1px;
+    color: #da4453;
+    border-bottom: #da4453 solid 2px;
 }
 .goodslide{
     display: block;
@@ -1033,54 +1086,6 @@ footer .menubar .icon-sales{
     font-size: 12px;
 }
 
-/*视频详情页面*/
-.video-bottom{
-    padding: 6px 0;
-}
-.video-bottom p{
-    padding: 0 6px;
-    margin-bottom: 6px;
-}
-.video-bottom p span{
-    display: inline-block;
-    height: 30px;
-    line-height: 32px;
-    color: #303030;
-}
-.video-bottom p span.user-img{
-    width: 30px;
-    height: 30px;
-    overflow: hidden;
-    margin-right: 10px;
-}
-.video-bottom p span .comment{
-    width: 16px;
-    height: 18px;
-    display: inline-block;
-    background: url(../img/video/comment.png) no-repeat top center;
-    background-size: 100%;
-}
-.video-title1{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 40px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.6)), color-stop(1, rgba(255, 255, 255, 0)));
-    color: #fff;
-    padding: 6px;
-}
-.video-player{
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    margin: -42px 0 0 -25px;
-    z-index: 999;
-    background: url(../img/video/paly.png) center no-repeat;
-    background-size: 100%;
-}
 .comment-box{
 
 }
@@ -1241,6 +1246,159 @@ footer .menubar .icon-sales{
     background-repeat: no-repeat;
     line-height: 20px;
     font-size: 18px;
+}
+
+/*个人中心订单*/
+.selbox{
+    display: block;
+    margin: 8px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+}
+.selbox>label{
+    float: left;
+}
+.selbox input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    float: left;
+}
+.selbox .allpay{
+    background: #3bafda;
+    color: #fff;
+    float: right;
+    padding: 0 4px;
+    margin-right: 8px;
+}
+.selbox .alldel{
+    float: right;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.orderlist{
+    display: block;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.orderinfo{
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    font-size: 14px;
+    padding: 8px;
+}
+.orderinfo .price{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ff223e;
+    font-size: 16px;
+}
+.ordersec{
+    display: block;
+    overflow: hidden;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+.ordersec .pic{
+    width: 24%;
+    float: left;
+}
+.ordersec .pic>img{
+    width: 100%;
+}
+.ordersec .info{
+    width: 76%;
+    float: left;
+}
+.ordersec .info>.tit{
+    font-size: 12px;
+    margin: 8px auto;
+}
+.orderbtn{
+    display: block;
+    overflow: hidden;
+    padding: 8px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+}
+.orderbtn>label{
+    float: left;
+}
+.orderbtn input[type="checkbox"]{
+    float: left;
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    float: left;
+}
+.orderbtn .cancel{
+    float: right;
+    background: #ababab;
+    color: #fff;
+    padding: 0 8px;
+}
+.orderbtn .pay{
+    float: right;
+    background: #e0001b;
+    color: #fff;
+    padding: 0 8px;
+    margin-right: 8px;
+}
+.userorder{
+    display: block;
+    overflow: hidden;
+}
+.userorder .infolist{
+    display: block;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+}
+.userorder .infolist>.tit{
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    background: #e6e9ed;
+    padding: 6px 8px;
+    font-size: 14px;
+}
+.redprize{
+    background: #da4453;
+    border-radius: 12px;
+    color: #fff;
+    padding: 0 8px;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    margin: 2px auto;
+}
+.userorder .infolist>.sec{
+    line-height: 18px;
+    font-size: 12px;
+    padding: 8px ;
+    background: #fff;
+    overflow: hidden;
+}
+.userorder .sec .pic{
+    width: 24%;
+}
+.userorder .sec .pic>img{
+    width: 100%;
+}
+.userorder .sec .info{
+    width: 74%;
+    margin-left: 2%;
+}
+.userorder .sec .info>a{
+    margin: 8px auto;
+}
+.userorder .infolist .span-r{
+    width: 26%;
+    text-align: right;
 }
 
 /*注册登录*/

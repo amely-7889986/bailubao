@@ -16,40 +16,63 @@
         <div id="section_container">
             <section id="slider_section" data-role="section" class="active">
                 <article  data-role="article" id="slider_article" class="active" style="position:relative;top:0;bottom:54px;background:#f6f6f6;max-width:640px;margin:0 auto;">
-                    <div class="goodsec">
-                        <div class="list">
+                    <div class="menu-box">
+                        <ul>
+                            <li class="active"><span>全部订单</span></li>
+                            <li><span>待付款</span></li>
+                            <li><span>待发货</span></li>
+                            <li><span>待收货</span></li>
+                        </ul>
+                    </div>
+                    <div class="selbox">
+                        <input type="checkbox"><label for="selall">全选</label>
+                        <a href="javascript:void(0)" class="alldel">批量取消订单</a>
+                        <a href="javascript:void(0)" class="allpay">合并付款</a>
+                    </div>
+                    <div class="orderlist">
+                        <div class="orderinfo">
+                            <p>订单编号：160909105730508</p>
+                            <p>订单日期：2016/9/9</p>
+                            <p>订单状态：等待付款</p>
+                            <span class="price">￥<em>216.00</em></span>
+                        </div>
+                        <div class="ordersec">
                             <div class="pic float-left">
                                 <img src="update/goodimg-01.png" alt="">
                             </div>
                             <div class="info float-left">
-                                <a href="proinfo.html" class="tit">EICHBAUM 爱士堡 小麦啤酒 500毫升 4听</a>
-                                <span class="float-left font12 col-red">￥134.00 </span>
-                                <span class="float-right font12">已售5376件 </span>
+                                <a href="user-orderinfo.html" class="tit">EICHBAUM 爱士堡 小麦啤酒 500毫升 4听</a>
+                                <span class="float-left font12">数量：1 </span>
+                                <span class="float-left font12">单价：98.00元</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="outer lrmargin8 tbmargin12">
-                        <textarea name="评价" class="remark" id="" rows="10" placeholder="请填写您对该商品的评价"></textarea>
-                    </div>
-                    <div class="countall-btn">
-                        <a class="radius4 button block submit margin8" href="proinfo.html" id="btn_confirm">
-                            <label>提交评价</label>
-                        </a>
-                    </div>
-                    <hr class="tbmargin8">
-                    <div class="comlist">
-                        <div class="tit">全部评价</div>
-                        <div class="list">
-                            <p class="font12"><span class="col-hui float-left">regee</span><span class="float-right col-hui">2016-09-09</span></p>
-                            <p class="text">很好 第二次拿了</p>
+                        <div class="orderbtn">
+                            <input type="checkbox"><label for="selall">选中订单</label>
+                            <a href="javascript:void(0)" class="cancel">取消订单</a>
+                            <a href="javascript:void(0)" class="pay">去付款</a>
                         </div>
-                        <div class="list">
-                            <p class="font12"><span class="col-hui text-left">regee</span><span class="text-right col-hui">2016-09-09</span></p>
-                            <p class="text">很好 第二次拿了</p>
+                    </div>
+                    <div class="orderlist">
+                        <div class="orderinfo">
+                            <p>订单编号：160909105730508</p>
+                            <p>订单日期：2016/9/9</p>
+                            <p>订单状态：等待付款</p>
+                            <span class="price">￥<em>216.00</em></span>
                         </div>
-                        <div class="list" style="border-bottom:none;">
-                            <p class="font12"><span class="col-hui text-left">regee</span><span class="text-right col-hui">2016-09-09</span></p>
-                            <p class="text">很好 第二次拿了</p>
+                        <div class="ordersec">
+                            <div class="pic float-left">
+                                <img src="update/goodimg-01.png" alt="">
+                            </div>
+                            <div class="info float-left">
+                                <a href="user-orderinfo.html" class="tit">EICHBAUM 爱士堡 小麦啤酒 500毫升 4听</a>
+                                <span class="float-left font12">数量：1 </span>
+                                <span class="float-left font12">单价：98.00元</span>
+                            </div>
+                        </div>
+                        <div class="orderbtn">
+                            <input type="checkbox"><label for="selall">选中订单</label>
+                            <a href="javascript:void(0)" class="cancel">取消订单</a>
+                            <a href="javascript:void(0)" class="pay">去付款</a>
                         </div>
                     </div>
                 </article>
