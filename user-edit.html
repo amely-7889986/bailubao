@@ -16,28 +16,50 @@
         <div id="section_container">
             <section id="slider_section" data-role="section" class="active">
                 <article  data-role="article" id="slider_article" class="active" style="position:relative;top:0;bottom:54px;background:#f6f6f6;max-width:640px;margin:0 auto;">
-	                <div class="shoppingStepBar clearfix">
-					    <div class="step active text-left">
-						    <em style="margin-left: -8px;">购物车</em>
-						    <div class="glyphicon glyphicon-ok"></div>
-						    <i></i>
-					    </div>
-					    <div class="step text-center">
-						    <em>确认订单</em>
-						    <div class="glyphicon glyphicon-ok"></div>
-					    </div>
-					    <div class="step text-right">
-						    <em style="margin-right: -14px;">下单成功</em>
-						    <div class="glyphicon glyphicon-ok"></div>
-						    <i></i>
-					    </div>
-					</div>
-					<hr class="tbmargin8">
-					<div class="emptycar">
-						<img src="assets/app/img/list/shopnull.png" alt="">
-						<p class="text">暂未选购商品</p>
-						<a href="prolist.html" class="btn-shopmore">去逛逛</a>
-					</div>
+                    <div class="userdetail">
+                        <div class="user-top">
+                            <div class="pic">
+                                <img src="assets/app/img/list/defaultimg.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="font14">张小薇</p>
+                                <p class="font12 col-hui">支持.jpg、.gif、.png格式，保存后生效！</p>
+                                <a href="javascript:void(0)" class="avatar">从微信上获取头像</a>
+                            </div>
+                        </div>
+                        <div class="userform">
+                            <label for="account" class="formtit">账户信息</label>
+                            <div class="account">
+                                用户名：amely000
+                            </div>
+                            <label for="name" class="formtit">姓名</label>
+                            <div class="row-right input-box radius4 margin8">
+                                <input type="text" placeholder="" name="name" value="张小薇">
+                            </div>
+                            <label for="phone" class="formtit">手机</label>
+                            <div class="row-right input-box radius4 margin8">
+                                <input type="text" placeholder="" name="phone" value="1840200****">
+                            </div>
+                            <label for="QQ" class="formtit">QQ</label>
+                            <div class="row-right input-box radius4 margin8">
+                                <input type="text" placeholder="请填写您的QQ号码" name="QQ" value="">
+                            </div>
+                            <label for="identity" class="formtit">身份证号码</label>
+                            <div class="row-right input-box radius4 margin8">
+                                <input type="text" placeholder="请填写您的身份证号码" name="identity" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="countall-btn">
+                        <a class="radius4 button block submit margin8" href="javascript:void(0)" id="btn_confirm">
+                            <label>保存用户信息</label>
+                        </a>
+                    </div>
+                    <div class="account">
+                        <span class="float-left">密码</span>
+                        <a href="set-password.html" class="float-right col-red">修改<i class="icon-arrowright float-right col-hei"></i></a>
+                    </div>
+                    <br>
                 </article>
                 <footer>
                     <ul class="menubar">
