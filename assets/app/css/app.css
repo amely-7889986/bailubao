@@ -1219,6 +1219,33 @@ footer .menubar .icon-sales{
     background: url(../img/user/iconfont-untitled5.png) center center no-repeat;
     background-size: 100%;
 }
+.user-count{
+    background: #fff;
+    padding: 8px 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    border-top: 1px solid #ddd;
+}
+.user-count li{
+    display: block;
+    width: 33.33%;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+    float: left;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+}
+.user-count li>span{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    color: #e0001d;
+}
 .usertit{
     display: block;
     width: 30%;
@@ -1406,6 +1433,9 @@ footer .menubar .icon-sales{
     width: 80px;
     height: 80px;
     margin: 40px auto;
+}
+.login-box{
+    margin-top: 68px;
 }
 /*默认样式修改*/
 a {
